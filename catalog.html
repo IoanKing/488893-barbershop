@@ -3,10 +3,11 @@
   <head>
     <title>Барбершоп «Бородинский»</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Главное меню">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
         </a>
@@ -18,23 +19,72 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+          <li class="login-link">
+            <a class="login-link" href="login.html">Вход</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="container">
+
       <h1 class="page-title">Средства для ухода</h1>
 
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs" aria-label="Хлебные крошки">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li class="breadcrumbs-current">Средства для ухода</li>
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Производители:</legend>
+            <p class="filters-item">
+              <label for="manufacturers-1">Baxter of California</label>
+              <input id="manufacturers-1" type="checkbox" name="name-1" value="Baxter of California" checked>
+            </p>
+            <p class="filters-item">
+              <label for="manufacturers-2">Mr Natty</label>
+              <input id="manufacturers-2" type="checkbox" name="name-2" value="Mr Natty">
+            </p>
+            <p class="filters-item">
+              <label for="manufacturers-3">Suavecito</label>
+              <input id="manufacturers-3" type="checkbox" name="name-3" value="Suavecito" checked>
+            </p>
+            <p class="filters-item">
+              <label for="manufacturers-4">Malin+Goetz</label>
+              <input id="manufacturers-4" type="checkbox" name="name-4" value="Malin+Goetz">
+            </p>
+            <p class="filters-item">
+              <label for="manufacturers-5">Murray’s</label>
+              <input id="manufacturers-5" type="checkbox" name="name-5" value="Murray’s">
+            </p>
+            <p class="filters-item">
+              <label for="manufacturers-6">American Crew</label>
+              <input id="manufacturers-6" type="checkbox" name="name-6" value="American Crew" checked>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров:</legend>
+            <p class="filters-item">
+              <label for="groups-1">Бритвенные
+                  принадлежности</label>
+              <input id="groups-1" type="radio" name="group" value="Бритвенные
+              принадлежности">
+            </p>
+            <p class="filters-item">
+              <label for="groups-2">Средства для ухода</label>
+              <input id="groups-2" type="radio" name="group" value="Средства для ухода" checked>
+            </p>
+            <p class="filters-item">
+              <label for="groups-3">Аксессуары</label>
+              <input id="groups-3" type="radio" name="group" value="Аксессуары">
+            </p>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
-      
+
       <section class="catalog">
         <h2 class="visually-hidden">Список срежств для ухода</h2>
         <ul class="catalog-list">
@@ -141,20 +191,20 @@
             </p>
           </li>
         </ul>
-        <ul class="pagination">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item pagination-item-current"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
+        <ul class="pagination" aria-label="Пагинация по каталогу">
+          <li class="pagination-item"><a href="#" aria-label="Страница каталога">1</a></li>
+          <li class="pagination-item pagination-item-current"><a aria-label="Текущая страница каталога">2</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Страница каталога">3</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Страница каталога">4</a></li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
       <p class="footer-contacts">
-          Барбершоп «бородинский»<br>
-          Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          <a href="map.html">Как нас найти?</a><br>
-          Телефон: +7 (495) 666-02-66
+        Барбершоп «бородинский»<br>
+        Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (495) 666-02-66
       </p>
       <div class="footer-social">
         <b>Давайте дружить!</b>
@@ -165,15 +215,33 @@
         </ul>
       </div>
       <p class="footer-copyright">
-          <b>Рзработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+          <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
 
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль:</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

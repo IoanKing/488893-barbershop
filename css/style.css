@@ -1,0 +1,17 @@
+a,
+a.button,
+input,
+button,
+button.button {
+  outline: 1px solid orange;
+}
+
+a:focus,
+input:focus,
+button:focus {
+  outline: 3px solid lightseagreen;
+}
+
+.button {
+  outline: 1px solid red;
+}
