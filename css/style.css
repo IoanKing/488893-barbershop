@@ -234,6 +234,42 @@ a {
   background-color: #ffffff;
 }
 
+.product-photo-full {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-photo-preview {
+  list-style: none;
+}
+
+.product-photo-preview img {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-article {
+  color: #aeaeae;
+}
+
+.product-price b {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.product-price .button {
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .main-footer {
   color: #ffffff;
 
