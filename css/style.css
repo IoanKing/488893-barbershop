@@ -15,6 +15,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-page {
+  color: #000000;
+
+  background-color: #f9f6f3;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -109,6 +118,122 @@ a {
   border-color: #663d15;
 }
 
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.catalog-item-price b {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.catalog-item-price .button {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: #663d15;
+}
+
+.pagination-item-current a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
 .main-footer {
   color: #ffffff;
 
@@ -192,126 +317,4 @@ a {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
-}
-
-.inner-page {
-  color: #000000;
-
-  background-color: #f9f6f3;
-  background-image: url("../img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
-}
-
-.inner-page h1 {
-  font-size: 30px;
-  line-height: 42px;
-}
-
-.breadcrumbs {
-  list-style: none;
-  padding-left: 0;
-}
-
-.breadcrumbs a {
-  line-height: 20px;
-  color: black;
-}
-
-.breadcrumbs-current {
-  color: #999999;
-}
-
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.filters ul {
-  padding-left: 0;
-}
-
-.filters legend {
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.filters label {
-  line-height: 18px;
-}
-
-.filter-input:hover:not(:disabled) ~ label {
-  color: #663300;
-}
-
-.filter-input:disabled ~ label {
-  opacity: 0.3;
-}
-
-.filter-button {
-  font-size: 13px;
-  line-height: 30px;
-  padding: 10px 30px;
-}
-
-.filters-option {
-  list-style: none;
-  padding-bottom: 10px;
-}
-
-.catalog-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.catalog-category {
-  font-size: 14px;
-  line-height: 18px;
-  color: black;
-  text-transform: none;
-}
-
-.catalog-item-title {
-  font-size: 14px;
-  line-height: 18px;
-  color: black;
-}
-
-.catalog-item-price {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.pagination {
-  list-style: none;
-  padding-left: 0;
-}
-
-.pagination-item {
-  font-size: 14px;
-  line-height: 18px;
-
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #000000;
-  border: none;
-}
-
-.pagination-item:hover:not(.pagination-item-current),
-.pagination-item:focus:not(.pagination-item-current),
-.pagination-item:active:not(.pagination-item-current) {
-  background-color: #663d15;
-}
-
-.pagination-item-current {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.pagination-item a {
-  color: inherit;
 }
