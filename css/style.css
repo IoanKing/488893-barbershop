@@ -375,13 +375,7 @@ a {
   background-color: #ffffff;
 }
 
-.product-columns {
-  display: flex;
-  justify-content: space-between;
-}
-
 .product-photos {
-
   width: 460px;
 }
 
