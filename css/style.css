@@ -68,6 +68,16 @@ a {
   height: 153px;
 }
 
+.inner-page .main-navigation {
+  flex-direction: row;
+}
+
+.inner-page .main-header-logo {
+  order: -1;
+  width: auto;
+  height: auto;
+}
+
 .main-navigation-wrapper {
   width: 100%;
   margin-bottom: 60px;
@@ -80,7 +90,6 @@ a {
   justify-content: space-between;
 }
 
-
 .site-navigation,
 .user-navigation {
   list-style: none;
@@ -89,6 +98,7 @@ a {
 }
 
 .site-navigation {
+  flex-grow: 1;
   width: 620px;
 }
 
@@ -218,6 +228,15 @@ a {
   color: #aba9a7;
 }
 
+.catalog-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 230px;
+}
+
 .filter fieldset {
   border: none;
 }
@@ -243,13 +262,24 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   list-style: none;
+  padding-left: 0;
 }
 
 .catalog-item {
+  width: 220px;
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .catalog-item:hover {
@@ -283,10 +313,14 @@ a {
 }
 
 .pagination-list {
+  display: flex;
   list-style: none;
+  padding-left: 0;
 }
 
 .pagination-item a {
+  padding: 10px 15px;
+  margin-right: 10px;
   color: #ffffff;
 
   background-color: #000000;
